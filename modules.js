@@ -1,0 +1,7 @@
+const names = require('./names')
+const sayHi = require('./5-utiles')
+const data = require('./alternative-flavor')
+require ('./mind')
+//sayHi('kolo')
+//sayHi(names.omar)
+//sayHi(names.ma3lmzaki) 

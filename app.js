@@ -1,5 +1,6 @@
-const _=require('loadash')
-
-const items = [1, [2, [3, [4]]]]
-const newitems = _.flattenDeep (items)
-console.log (newitems)
+var http = require('http')
+var fs = require ('fs')
+http.createServer(function(req,res){
+    const text = fs.readFileSync('./content/big.txt','utf-8')
+    res.end(text)
+}).listen(5000)
